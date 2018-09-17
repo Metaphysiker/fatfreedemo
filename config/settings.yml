@@ -1,0 +1,6 @@
+:host: "www.philosophie.ch"
+
+https://www.philosophie.ch      => :base_url: ""       # (leave blank)
+
+
+:locale: "de-DE"
