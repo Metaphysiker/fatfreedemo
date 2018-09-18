@@ -7,6 +7,8 @@ config/deploy.rb
 !config/database.postgres.docker.yml
 !config/database.sqlite.yml
 !config/settings.default.yml
+!config/database.yml
+!config/settings.yml
 
 .rspec
 spec/reports
