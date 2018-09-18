@@ -8,6 +8,7 @@ class CreateContacts < ActiveRecord::Migration[4.2]
       t.references :lead
       t.integer :assigned_to
       t.integer :reports_to
+      t.integer :philosophie_id
       t.string :first_name,  limit: 64, null: false, default: ""
       t.string :last_name,   limit: 64, null: false, default: ""
       t.string :access,      limit: 8, default: "Public"

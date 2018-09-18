@@ -6,6 +6,7 @@ class CreateAccounts < ActiveRecord::Migration[4.2]
       t.string :uuid, limit: 36
       t.references :user
       t.integer :assigned_to
+      t.integer :philosophie_society_id
       t.string :name, null: false, default: ""
       t.string :access, limit: 8, default: "Public" # %w(Private Public Shared)
       t.string :website, limit: 64

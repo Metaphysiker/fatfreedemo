@@ -36,6 +36,7 @@ ActiveRecord::Schema.define(version: 20180107082701) do
   create_table "accounts", id: :serial, force: :cascade do |t|
     t.integer "user_id"
     t.integer "assigned_to"
+    t.integer "philosophie_society_id"
     t.string "name", default: "", null: false
     t.string "access", limit: 8, default: "Public"
     t.string "website", limit: 64
@@ -149,6 +150,7 @@ ActiveRecord::Schema.define(version: 20180107082701) do
     t.integer "lead_id"
     t.integer "assigned_to"
     t.integer "reports_to"
+    t.integer "philosophie_id"
     t.string "first_name", limit: 64, default: "", null: false
     t.string "last_name", limit: 64, default: "", null: false
     t.string "access", limit: 8, default: "Public"
